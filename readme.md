@@ -5,3 +5,7 @@ I use Vim as my main password manager instead of the popular 1Password. I [even 
 ## Technology
 
 I use the awesome [Jen library](https://github.com/mykiimike/jen) to generate random passwords. On a sidenote, I'm the worst JS developer the world has ever known - so if you want to change the code and enhance it, it wil be very much appreciated.
+
+## Deploy
+
+The site is hosted on [Divshot](https://divshot.io). It's great and free for a personal project. To push the code to production, simply `divshot push production` and it's done. Woot. Now I can go back on building other stuff.
