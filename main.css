@@ -1,0 +1,78 @@
+html, body, div, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+::-moz-selection {
+  background: transparent; }
+
+::selection {
+  background: transparent; }
+
+body {
+  line-height: 1;
+  background: linear-gradient(90deg, #192C74 10%, #21A8AD 90%); }
+
+#password {
+  height: 100vh; }
+
+#main {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  #main input {
+    background-color: transparent;
+    color: #fff;
+    font-size: 6.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Vollkorn', serif;
+    text-align: center;
+    width: 99%;
+    border: 0px; }
+    #main input:focus {
+      outline: none; }
+
+.instructions {
+  position: fixed;
+  top: 30px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-family: 'Lato', sans-serif; }
+  .instructions span {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 4px 6px;
+    border-radius: 6px;
+    margin: 0px 8px; }
+
+footer {
+  position: fixed;
+  bottom: 50px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-family: 'Lato', sans-serif; }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    padding-bottom: 3px; }
+
+@media (max-width: 480px) {
+  #main input {
+    font-size: 2rem; }
+  footer {
+    font-size: 3.3rem;
+    line-height: 6rem; }
+    footer p {
+      font-size: 0.9rem;
+      line-height: 1.6rem;
+      padding: 0px 30px; } }
+

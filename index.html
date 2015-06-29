@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>The simplest Password Generator</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="http://simplestpasswordgenerator.com" />
+
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link rel="icon" type="image/png" href="http://simplestpasswordgenerator.com/img/favicon.png">
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Twitter
+  ================================================== -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@djaiss" />
+  <meta name="twitter:url" content="http://simplestpasswordgenerator.com" />
+  <meta name="twitter:title" content="The Simplest Password Generator Ever" />
+  <meta name="twitter:description" content="Most online password generators are ugly as shit. This one isn't." />
+  <meta name="twitter:image" content="http://simplestpasswordgenerator.com/img/social.png" />
+
+  <!-- Facebook
+  ================================================== -->
+  <meta property="og:site_name"          content="Simplest Password Generator" />
+  <meta property="og:locale"             content="en_US" />
+  <meta property="og:url"                content="http://simplestpasswordgenerator.com"/>
+  <meta property="og:title"              content="The Simplest Password Generator Ever" />
+  <meta property="og:description"        content="Most online password generators are ugly as shit. This one isn't." />
+  <meta property="og:image"              content="http://simplestpasswordgenerator.com/img/social.png" />
+
+  <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+  window.onload = function(){
+    var text_input = document.getElementById ('txtField');
+    text_input.focus ();
+    text_input.select ();
+  }
+  </script>
+  <script type="text/javascript" src="jen.js"></script>
+</head>
+<body>
+
+  <div id="password">
+    <p id="main">
+      <input type="text" value="" id="txtField" autofocus>
+    </p>
+    <p class="instructions" id="mac">Simply press <span>⌘ + C</span> to copy the password.</p>
+  </div> <!-- . password -->
+
+  <footer>
+    <p id="copyright">A dead simple random password generator. Brought to you by <a href="https://dribbble.com/djaiss">Regis Freyd</a>.</p>
+  </footer>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64566924-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <script>
+    (function() {
+      var div = document.getElementById("txtField");
+      function write(d) {
+        console.log(d);
+        div.value = d;
+      }
+
+      var hdl = new Jen(false);
+      write(hdl.password(12));
+
+    })();
+  </script>
+
+</body>
+</html>
