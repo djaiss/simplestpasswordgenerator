@@ -8,4 +8,4 @@ I use the awesome [Jen library](https://github.com/mykiimike/jen) to generate ra
 
 ## Deploy
 
-The site is hosted on [Divshot](https://divshot.io). It's great and free for a personal project. To push the code to production, simply `divshot push production` and it's done. Woot. Now I can go back on building other stuff.
+The site is hosted on [Divshot](https://divshot.com/). It's great and free for a personal project. To push the code to production, simply `divshot push production` and it's done. Woot. Now I can go back on building other stuff.
